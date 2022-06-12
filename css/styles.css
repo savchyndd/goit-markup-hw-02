@@ -1,0 +1,13 @@
+:root {
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+}
+.logo span {
+  color: #2196f3;
+}
