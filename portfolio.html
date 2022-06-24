@@ -11,25 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <div class="container main-nav">
         <a href="./index.html" class="logo" lang="en"><span>Web</span>Studio</a>
-        <ul class="nav-list">
-          <li><a href="./index.html" class="nav-item">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-item current">Портфоліо</a></li>
-          <li><a href="#" class="nav-item">Контакти</a></li>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-li-item"><a href="./index.html" class="nav-item">Студія</a></li>
+            <li class="nav-li-item">
+              <a href="./portfolio.html" class="nav-item current">Портфоліо</a>
+            </li>
+            <li class="nav-li-item"><a href="#" class="nav-item">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-list">
+          <li class="contacts-li-item">
+            <a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a>
+          </li>
+          <li class="contacts-li-item">
+            <a href="tel:+380961111111" class="contacts-item">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts-list">
-        <li><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-item">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <h1 class="portfolio-title">Портфоліо</h1>
+      <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
       <ul class="btn-list">
         <li><button type="button" class="btn-item">Всі</button></li>
         <li><button type="button" class="btn-item">Веб-сайти</button></li>
