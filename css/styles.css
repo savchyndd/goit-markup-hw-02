@@ -11,6 +11,8 @@
 
   --border-color: #eeeeee;
   --header-border-color: #ececec;
+
+  --card-set-gap: 30px;
 }
 /* Reset styles */
 h1,
@@ -88,13 +90,9 @@ h3 {
   color: var(--accent-color);
 }
 
-/* відступ лого передивитися на макеті 
---
---
-*/
 .nav-list {
   display: flex;
-  margin-left: 92px;
+  margin-left: 93px;
 }
 .nav-li-item:not(:last-child),
 .contacts-li-item:not(:last-child) {
@@ -200,6 +198,7 @@ h3 {
   text-align: center;
   background-color: var(--bgr-primary-color);
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -216,21 +215,34 @@ h3 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.card-team-text {
+  padding: 30px 0;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-desc {
   font-size: 16px;
   line-height: 1.18;
-  margin-bottom: 30px;
 }
 
 /* Main Portfolio */
-.btn-item {
+.container.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -238,22 +250,38 @@ h3 {
   text-align: center;
   color: var(--header-color);
   background-color: var(--bgr-primary-color);
+  border-radius: 4px;
 }
-.btn-item:hover,
-.btn-item:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
 .preview-item {
   width: 370px;
-  /* height: 404px; */
   border: 1px solid var(--border-color);
+
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card-preview-text {
+  padding: 20px 24px;
 }
 .preview-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .preview-desc {
   font-size: 16px;
