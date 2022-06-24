@@ -63,11 +63,12 @@ h3 {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 2px solid tomato;
 }
 
 /* heder */
+.header-main {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .container.main-nav {
   display: flex;
   align-items: center;
@@ -164,49 +165,68 @@ h3 {
 }
 
 /* Features */
-.container.features {
+.features-list {
   display: flex;
+  justify-content: space-between;
+}
+.features-item {
+  width: 270px;
 }
 .features-subtitle {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 .features-desc {
   font-size: 14px;
   line-height: 1.71;
 }
 
+/* What we do */
 .wedo-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
+}
+.wedo-list {
+  display: flex;
+  justify-content: space-between;
 }
 
+/* Our team */
 .team {
+  text-align: center;
   background-color: var(--bgr-primary-color);
 }
 .team-title {
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+  margin-bottom: 50px;
 }
-
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
 .team-item {
-  background-color: var(--white-color);
   width: 270px;
-  /* height: 368px; */
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-desc {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Main Portfolio */
@@ -241,9 +261,15 @@ h3 {
 }
 
 /* Footer */
-/* Для наглядності */
 footer {
+  padding: 60px 0;
   background-color: var(--bgr-secondary-color);
+}
+.address-list {
+  margin-top: 20px;
+}
+.address-li-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-item.location {
   font-style: normal;
